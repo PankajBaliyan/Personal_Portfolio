@@ -12,4 +12,4 @@
 
 💙 Join the channel to see more videos like this. [Code_With_Pankaj](https://www.youtube.com/c/CodeWithPankaj1)
 
-![preview img](/preview.png)
+![preview img](/preview.png) 
