@@ -1288,6 +1288,22 @@ img {
     padding: 0;
   }
 
+.contact__icon{
+  margin-right: 1rem;
+}
+
+  .home__content {
+    grid-template-columns: max-content 1fr 0fr;
+}
+
+.container__large{
+  max-width: 1000px !important;
+}
+
+.skills__container{
+  grid-template-columns: repeat(3, 1fr);
+}
+
   .home__blob {
     width: 320px;
   }
