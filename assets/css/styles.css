@@ -959,7 +959,7 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: #fff;
   margin-top: var(--mb-3);
 }
 
@@ -981,6 +981,7 @@ img {
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
+  outline: 1px solid white;
 }
 
 .scrollup:hover {
@@ -1015,7 +1016,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1077,6 +1078,13 @@ img {
   .testimonial__description {
     text-align: center;
   }
+
+  .footer__socials,
+  .footer__links,
+  .footer__header {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 /* For medium devices */
@@ -1108,12 +1116,32 @@ img {
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+
+  .footer__socials,
+  .footer__links,
+  .footer__header {
+    margin: auto;
+    text-align: center;
+  }
+
+  .large__footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   body {
@@ -1279,7 +1307,6 @@ img {
 }
 
 /* For large devices */
-
 @media screen and (min-width: 1024px) {
 
   .header,
@@ -1288,21 +1315,36 @@ img {
     padding: 0;
   }
 
-.contact__icon{
-  margin-right: 1rem;
-}
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    max-width: 1100px;
+
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .contact__icon {
+    margin-right: 1rem;
+  }
 
   .home__content {
     grid-template-columns: max-content 1fr 0fr;
-}
+  }
 
-.container__large{
-  max-width: 1000px !important;
-}
+  .container__large {
+    max-width: 1000px !important;
+  }
 
-.skills__container{
-  grid-template-columns: repeat(3, 1fr);
-}
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .home__blob {
     width: 320px;
@@ -1342,5 +1384,18 @@ img {
 
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .large__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .large__footer {
+    /* margin-right: 10px; */
+    margin: auto;
   }
 }
