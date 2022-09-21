@@ -356,6 +356,10 @@ img {
   font-size: 1.25rem;
 }
 
+.single__outline {
+  outline: 1px solid #fff;
+}
+
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
@@ -884,6 +888,7 @@ img {
   font-size: 2rem;
   color: var(--first-color);
   margin-bottom: var(--mb-0-75);
+  margin-right: 1rem;
 }
 
 .contact__title {
@@ -1030,6 +1035,15 @@ img {
     column-gap: 0;
   }
 
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav__btns {
+    margin-left: 2rem;
+  }
+
   .home__content {
     grid-template-columns: 0.25fr 3fr;
   }
@@ -1077,6 +1091,10 @@ img {
   .testimonial__data,
   .testimonial__description {
     text-align: center;
+  }
+
+  .align__middle {
+    margin: auto;
   }
 
   .footer__socials,
