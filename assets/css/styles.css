@@ -23,7 +23,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
+  --close-icon-color: hsl(var(--hue-color), 50%, 100%);
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -67,6 +67,11 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
+  }
+
+  .home__data {
+    margin-left: 1rem;
+    width: 434px !important;
   }
 }
 
@@ -211,6 +216,11 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .home__data {
+    width: 370px !important;
+    margin-left: 1rem;
+  }
+
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -221,6 +231,10 @@ img {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
+  }
+
+  .work__qualification {
+    padding-right: 3.7rem;
   }
 }
 
@@ -252,7 +266,7 @@ img {
   bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
+  color: var(--close-icon-color);
 }
 
 .nav__close:hover {
@@ -532,8 +546,12 @@ img {
   width: 85%;
 }
 
+.skills__svelte {
+  width: 70%;
+}
+
 .skills__php {
-  width: 90%;
+  width: 80%;
 }
 
 .skills__node {
@@ -548,15 +566,19 @@ img {
   width: 65%;
 }
 
-.skills__figma {
-  width: 60%;
+.skills__nvda {
+  width: 80%;
 }
 
-.skills__sketch {
+.skills__devtools {
   width: 70%;
 }
 
-.skills__photoshop {
+.skills__accessibility_checker {
+  width: 80%;
+}
+
+.skills__accessibility_cypress {
   width: 80%;
 }
 
@@ -659,6 +681,7 @@ img {
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
+  outline: 1px solid #fff;
 }
 
 .services__content:hover {
@@ -709,6 +732,7 @@ img {
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  outline: 1px solid #fff;
 }
 
 .services__modal-services {
@@ -923,6 +947,11 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+textarea {
+  /* will prevent resizing horizontally */
+  resize: vertical;
+}
+
 /*==================== FOOTER ====================*/
 .footer__container {
   row-gap: 3.5rem;
@@ -1022,6 +1051,10 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (min-width: 350px) {
+  .home__content {
+    padding-top: 0rem;
+  }
+
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1056,6 +1089,10 @@ img {
     font-size: var(--normal-font-size);
   }
 
+  .qualification__section__center {
+    margin-left: 2rem;
+  }
+
   .qualification__data {
     gap: 0.5rem;
   }
@@ -1067,6 +1104,7 @@ img {
 
   .services__content {
     padding-right: 3.5rem;
+    width: 250px;
   }
 
   .services__modal {
@@ -1113,11 +1151,22 @@ img {
 
   .home__data {
     grid-column: initial;
+    width: 250px;
   }
 
   .home__img {
     order: 1;
     justify-self: center;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__links>li {
+    margin-left: 1rem;
   }
 
   .about__container,
@@ -1149,6 +1198,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .home__content {
+    padding-top: 1rem !important;
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1262,12 +1315,20 @@ img {
     grid-template-columns: 0.5fr;
   }
 
+  .work__qualification {
+    padding-right: 1rem;
+  }
+
   .services__icon {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .services__content {
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 4rem 0 2rem 2.5rem;
+  }
+
+  .services__container {
+    display: flex;
   }
 
   .services__modal-content {
@@ -1331,6 +1392,10 @@ img {
   .main,
   .footer__container {
     padding: 0;
+  }
+
+  .home__social {
+    transform: none !important;
   }
 
   .container {
@@ -1412,8 +1477,43 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
+  .home__data {
+    width: 670px !important;
+  }
+
+  .home__content {
+    width: 1200px;
+  }
+
   .large__footer {
-    /* margin-right: 10px; */
     margin: auto;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .portfolio__content {
+    column-gap: 2rem;
+  }
+
+  .swiper-button-prev {
+    margin-left: 5rem;
+  }
+
+  .swiper-button-next {
+    margin-right: 5rem;
+  }
+
+  .portfolio__description {
+    width: 550px;
+  }
+
+  .container__large {
+    max-width: 1440px !important;
+  }
+
+  .skills__content {
+    width: 300px;
   }
 }
