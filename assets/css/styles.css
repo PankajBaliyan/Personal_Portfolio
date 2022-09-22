@@ -233,6 +233,16 @@ img {
     transition: 0.3s;
   }
 
+  .project__img {
+    border-radius: 10px;
+    margin-top: 6px;
+    width: 269px !important;
+  }
+
+  .contact__button {
+    margin-bottom: 36px;
+  }
+
   .work__qualification {
     padding-right: 3.7rem;
   }
@@ -1050,6 +1060,38 @@ textarea {
 }
 
 /*==================== MEDIA QUERIES ====================*/
+
+/* for very small devices  */
+@media screen and (max-width: 350px) {
+  .home__content {
+    padding-top: 0px;
+  }
+
+  .home__social {
+    margin-left: 10px;
+  }
+
+  .home__img {
+    margin-left: 1rem;
+  }
+
+  .home__data {
+    width: 286px !important;
+  }
+
+  .project__img {
+    margin-bottom: 36px;
+  }
+
+  .large__footer {
+    justify-content: center;
+  }
+
+  .footer__links {
+    margin-left: 43px;
+  }
+}
+
 /* For small devices */
 @media screen and (min-width: 350px) {
   .home__content {
@@ -1138,6 +1180,10 @@ textarea {
   .testimonial__data,
   .testimonial__description {
     text-align: center;
+  }
+
+  .project__img {
+    margin-bottom: 55px;
   }
 
   .align__middle {
@@ -1360,6 +1406,16 @@ textarea {
     background: none;
   }
 
+  .project__img {
+    width: 280px;
+    margin-top: 14px;
+    border-radius: 10px;
+  }
+
+  .contact__button {
+    margin-bottom: 32px;
+  }
+
   .project__container {
     background-color: var(--first-color-second);
     border-radius: 1rem;
@@ -1470,6 +1526,12 @@ textarea {
     bottom: -4.5rem;
   }
 
+  .project__img {
+    width: 350px;
+    margin-bottom: 40px;
+    margin-top: -6px;
+  }
+
   .contact__form {
     width: 460px;
   }
@@ -1516,6 +1578,10 @@ textarea {
 
   .portfolio__description {
     width: 550px;
+  }
+
+  .project__img {
+    width: 350px;
   }
 
   .container__large {
