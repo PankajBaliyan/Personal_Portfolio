@@ -1565,7 +1565,7 @@ textarea {
   }
 
   .portfolio__content {
-    column-gap: 2rem;
+    column-gap: 0rem;
   }
 
   .swiper-button-prev {
