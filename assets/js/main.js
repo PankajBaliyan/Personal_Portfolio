@@ -93,6 +93,7 @@ modalCloses.forEach((modalClose) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+// used to auto scroll the portfolio projects
 let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,

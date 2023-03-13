@@ -1,7 +1,9 @@
 # Personal Portfolio Website
 
 ## [Watch it on youtube](https://www.youtube.com/c/CodeWithPankaj1)
-## [Live Preview of Website](https://pankajkumar90.github.io/Personal_Portfolio/)
+
+## [Live Preview of Website](https://pankajbaliyan.github.io/Personal_Portfolio/)
+
 ### The description of a responsive portfolio website
 
 - Website designed using HTML CSS & JavaScript to display personal portfolios.
@@ -12,4 +14,4 @@
 
 💙 Join the channel to see more videos like this. [Code_With_Pankaj](https://www.youtube.com/c/CodeWithPankaj1)
 
-![preview img](/preview.png) 
+![preview img](/preview.png)
